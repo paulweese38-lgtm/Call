@@ -2,22 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StatusBar, Alert, Linking } from 'react-native';
+import { StatusBar, Alert, Linking, View, Text, ActivityIndicator, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { useAuthStore } from '@/store/authStore';
+import { useAuthStore } from '../store/authStore';
 
 // Auth Screens
-import LoginScreen from '@/screens/auth/LoginScreen';
-import RegisterScreen from '@/screens/auth/RegisterScreen';
-import ForgotPasswordScreen from '@/screens/auth/ForgotPasswordScreen';
+import LoginScreen from '../screens/auth/LoginScreen';
+import RegisterScreen from '../screens/auth/RegisterScreen';
+import ForgotPasswordScreen from '../screens/auth/ForgotPasswordScreen';
 
 // Main App Screens (to be created)
-import LegalDashboardScreen from '@/screens/legal/LegalDashboardScreen';
-import VoicemailListScreen from '@/screens/voicemail/VoicemailListScreen';
-import PhoneManagementScreen from '@/screens/phone/PhoneManagementScreen';
-import VoicePlaygroundScreen from '@/screens/voice/VoicePlaygroundScreen';
-import ProfileScreen from '@/screens/profile/ProfileScreen';
-import SubscriptionScreen from '@/screens/subscription/SubscriptionScreen';
+import LegalDashboardScreen from '../screens/legal/LegalDashboardScreen';
+import VoicemailListScreen from '../screens/voicemail/VoicemailListScreen';
+import PhoneManagementScreen from '../screens/phone/PhoneManagementScreen';
+import VoicePlaygroundScreen from '../screens/voice/VoicePlaygroundScreen';
+import ProfileScreen from '../screens/profile/ProfileScreen';
+import SubscriptionScreen from '../screens/subscription/SubscriptionScreen';
 
 // Types
 export type RootStackParamList = {
