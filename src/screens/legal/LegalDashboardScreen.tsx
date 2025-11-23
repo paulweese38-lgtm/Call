@@ -12,6 +12,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useAuthStore } from '../store/authStore';
 import { supabaseClient } from '../lib/supabaseClient';
+import { Colors, Spacing, BorderRadius, Shadows } from '../../constants/theme';
 
 interface LegalDocument {
   id: string;
