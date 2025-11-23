@@ -502,10 +502,8 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     elevation: 8,
   },
-  logo: {
-    width: 50,
-    height: 50,
-    resizeMode: 'contain',
+  logoText: {
+    fontSize: 35,
   },
   title: {
     fontSize: 26,
