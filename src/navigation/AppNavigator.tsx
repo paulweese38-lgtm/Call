@@ -54,6 +54,7 @@ export type MainTabParamList = {
   Voicemail: undefined;
   Phone: undefined;
   Voice: undefined;
+  DebtTracker: undefined;
   Profile: undefined;
   Subscription: undefined;
 };
