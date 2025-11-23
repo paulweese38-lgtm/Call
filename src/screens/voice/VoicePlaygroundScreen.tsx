@@ -19,7 +19,7 @@ export default function VoicePlaygroundScreen({ navigation }: any) {
 
   return (
     <View style={styles.container}>
-      <LinearGradient colors={['#1e3c72', '#2a5298']} style={styles.header}>
+      <LinearGradient colors={[Colors.primary, Colors.primaryDark]} style={styles.header}>
         <Text style={styles.headerTitle}>Voice Playground</Text>
         <Text style={styles.headerSubtitle}>
           6 AI voice personalities with text-to-speech
@@ -29,7 +29,7 @@ export default function VoicePlaygroundScreen({ navigation }: any) {
       <View style={styles.content}>
         {isFeatureLocked ? (
           <View style={styles.lockedContainer}>
-            <Icon name="lock" size={64} color="#ccc" />
+            <Icon name="lock" size={64} color={Colors.textMuted} />
             <Text style={styles.lockedTitle}>Premium Feature</Text>
             <Text style={styles.lockedDescription}>
               Voice Playground with 6 AI personalities is available with our Premium and Business subscriptions.
@@ -43,7 +43,7 @@ export default function VoicePlaygroundScreen({ navigation }: any) {
           </View>
         ) : (
           <View style={styles.placeholderContainer}>
-            <Icon name="record-voice-over" size={64} color="#1e3c72" />
+            <Icon name="record-voice-over" size={64} color={Colors.primary} />
             <Text style={styles.placeholderTitle}>Coming Soon</Text>
             <Text style={styles.placeholderDescription}>
               Voice AI playground with 6 personalities will be available soon.
