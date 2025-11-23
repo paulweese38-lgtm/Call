@@ -28,6 +28,11 @@ import DebtAnalysisScreen from '../screens/debt/DebtAnalysisScreen';
 import SOLDefenseScreen from '../screens/debt/SOLDefenseScreen';
 import LegalReportScreen from '../screens/debt/LegalReportScreen';
 
+// Credit Monitoring Screens
+import CreditMonitorScreen from '../screens/credit/CreditMonitorScreen';
+import CreditAccountsScreen from '../screens/credit/CreditAccountsScreen';
+import CreditDisputesScreen from '../screens/credit/CreditDisputesScreen';
+
 // Types
 export type RootStackParamList = {
   AuthStack: undefined;
