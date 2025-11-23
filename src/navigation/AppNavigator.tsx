@@ -140,7 +140,7 @@ const MainTabNavigator = () => {
           getTabIcon(focused, color, size, route.name),
         tabBarLabel: ({ focused }) => (
           <Text style={[
-            styles.tabBarLabel,
+            appStyles.tabBarLabel,
             { color: focused ? '#1e3c72' : '#888' }
           ]}>
             {getTabLabel(focused, route.name)}
@@ -148,7 +148,7 @@ const MainTabNavigator = () => {
         ),
         tabBarActiveTintColor: '#1e3c72',
         tabBarInactiveTintColor: '#888',
-        tabBarStyle: styles.tabBar,
+        tabBarStyle: appStyles.tabBar,
         headerShown: false,
         tabBarBadge: isPremiumFeature(route.name) ? '🔒' : undefined,
       })}
