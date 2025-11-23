@@ -469,6 +469,30 @@ const AppNavigator = () => {
                 animation: 'slide_from_right',
               }}
             />
+            <Stack.Screen
+              name="CreditMonitor"
+              component={CreditMonitorScreen}
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
+            <Stack.Screen
+              name="CreditAccounts"
+              component={CreditAccountsScreen}
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
+            <Stack.Screen
+              name="CreditDisputes"
+              component={CreditDisputesScreen}
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
           </>
         ) : (
           // Authentication screens
