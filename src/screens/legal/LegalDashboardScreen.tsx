@@ -436,7 +436,7 @@ const styles = StyleSheet.create({
   },
   viewAllText: {
     fontSize: 14,
-    color: '#1e3c72',
+    color: Colors.primary,
     fontWeight: '500',
   },
   quickActionsGrid: {
