@@ -198,7 +198,7 @@ const MainTabNavigator = () => {
 // Loading Screen
 const LoadingScreen = () => (
   <View style={appStyles.loadingContainer}>
-    <ActivityIndicator size="large" color="#1e3c72" />
+    <ActivityIndicator size="large" color={Colors.accent} />
     <Text style={appStyles.loadingText}>Loading CallWall...</Text>
   </View>
 );
