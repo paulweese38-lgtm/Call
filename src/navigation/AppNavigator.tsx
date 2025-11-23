@@ -121,6 +121,9 @@ const MainTabNavigator = () => {
       case 'Voice':
         iconName = 'record-voice-over';
         break;
+      case 'DebtTracker':
+        iconName = 'account-balance-wallet';
+        break;
       case 'Profile':
         iconName = 'person';
         break;
