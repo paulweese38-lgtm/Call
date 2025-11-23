@@ -19,7 +19,7 @@ export default function VoicemailListScreen({ navigation }: any) {
 
   return (
     <View style={styles.container}>
-      <LinearGradient colors={['#1e3c72', '#2a5298']} style={styles.header}>
+      <LinearGradient colors={[Colors.primary, Colors.primaryDark]} style={styles.header}>
         <Text style={styles.headerTitle}>Voicemail Intelligence</Text>
         <Text style={styles.headerSubtitle}>
           AI-powered transcription and sentiment analysis
@@ -29,7 +29,7 @@ export default function VoicemailListScreen({ navigation }: any) {
       <View style={styles.content}>
         {isFeatureLocked ? (
           <View style={styles.lockedContainer}>
-            <Icon name="lock" size={64} color="#ccc" />
+            <Icon name="lock" size={64} color={Colors.textMuted} />
             <Text style={styles.lockedTitle}>Premium Feature</Text>
             <Text style={styles.lockedDescription}>
               Voicemail Intelligence is available with our Premium and Business subscriptions.
@@ -43,7 +43,7 @@ export default function VoicemailListScreen({ navigation }: any) {
           </View>
         ) : (
           <View style={styles.placeholderContainer}>
-            <Icon name="voicemail" size={64} color="#1e3c72" />
+            <Icon name="voicemail" size={64} color={Colors.primary} />
             <Text style={styles.placeholderTitle}>Coming Soon</Text>
             <Text style={styles.placeholderDescription}>
               Voicemail management features will be available soon.
