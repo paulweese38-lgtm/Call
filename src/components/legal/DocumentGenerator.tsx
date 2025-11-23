@@ -790,10 +790,10 @@ const styles = StyleSheet.create({
   // Preview styles
   previewContainer: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.surface,
   },
   previewHeader: {
-    backgroundColor: '#1e3c72',
+    backgroundColor: Colors.primary,
     padding: 20,
     flexDirection: 'row',
     alignItems: 'center',
@@ -802,7 +802,7 @@ const styles = StyleSheet.create({
   previewTitle: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#fff',
+    color: Colors.white,
   },
   closePreviewButton: {
     padding: 4,
@@ -814,7 +814,7 @@ const styles = StyleSheet.create({
   previewText: {
     fontSize: 12,
     lineHeight: 18,
-    color: '#333',
+    color: Colors.text,
     fontFamily: 'monospace',
   },
   previewActions: {
@@ -822,6 +822,6 @@ const styles = StyleSheet.create({
     padding: 20,
     gap: 12,
     borderTopWidth: 1,
-    borderTopColor: '#eee',
+    borderTopColor: Colors.border,
   },
 });
