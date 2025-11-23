@@ -7,7 +7,7 @@ import { Colors, Spacing } from '../../constants/theme';
 export default function PhoneManagementScreen({ navigation }: any) {
   return (
     <View style={styles.container}>
-      <LinearGradient colors={['#1e3c72', '#2a5298']} style={styles.header}>
+      <LinearGradient colors={[Colors.primary, Colors.primaryDark]} style={styles.header}>
         <Text style={styles.headerTitle}>Phone Management</Text>
         <Text style={styles.headerSubtitle}>
           Track calls and manage phone numbers
@@ -16,7 +16,7 @@ export default function PhoneManagementScreen({ navigation }: any) {
 
       <View style={styles.content}>
         <View style={styles.placeholderContainer}>
-          <Icon name="phone" size={64} color="#1e3c72" />
+          <Icon name="phone" size={64} color={Colors.primary} />
           <Text style={styles.placeholderTitle}>Coming Soon</Text>
           <Text style={styles.placeholderDescription}>
             Phone number management and call tracking features will be available soon.
