@@ -418,7 +418,7 @@ const AppNavigator = () => {
             />
             <Stack.Screen
               name="LegalReport"
-              component={LegalDashboardScreen} // Temporary placeholder
+              component={LegalReportScreen}
               options={{
                 presentation: 'modal',
                 animation: 'slide_from_bottom',
