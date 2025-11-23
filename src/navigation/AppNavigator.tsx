@@ -37,6 +37,7 @@ export type AuthStackParamList = {
 
 export type MainTabParamList = {
   LegalDashboard: undefined;
+  CallHistory: undefined;
   Voicemail: undefined;
   Phone: undefined;
   Voice: undefined;
