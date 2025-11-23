@@ -364,7 +364,7 @@ export default function LegalDashboardScreen({ navigation }: any) {
 
   return (
     <View style={styles.container}>
-      <LinearGradient colors={['#1e3c72', '#2a5298']} style={styles.header}>
+      <LinearGradient colors={[Colors.primary, Colors.primaryDark]} style={styles.header}>
         <Text style={styles.headerTitle}>Legal Protection</Text>
         <Text style={styles.headerSubtitle}>
           FDCPA-compliant tools to protect your rights
