@@ -217,7 +217,7 @@ export default function LegalDashboardScreen({ navigation }: any) {
           onPress={() => handleFeaturePress('threat_analysis')}
         >
           <View style={styles.actionIconContainer}>
-            <Icon name="security" size={28} color="#1e3c72" />
+            <Icon name="security" size={28} color={Colors.primary} />
             {isFeatureLocked('threat_analysis') && (
               <View style={styles.lockOverlay}>
                 <Icon name="lock" size={16} color="#fff" />
