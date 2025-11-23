@@ -352,7 +352,7 @@ const AppNavigator = () => {
   );
 };
 
-const styles = StyleSheet.create({
+const appStyles = StyleSheet.create({
   loadingContainer: {
     flex: 1,
     justifyContent: 'center',
