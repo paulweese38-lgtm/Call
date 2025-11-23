@@ -7,7 +7,7 @@ import { Colors, Spacing, BorderRadius } from '../../constants/theme';
 export default function ProfileScreen({ navigation }: any) {
   return (
     <View style={styles.container}>
-      <LinearGradient colors={['#1e3c72', '#2a5298']} style={styles.header}>
+      <LinearGradient colors={[Colors.primary, Colors.primaryDark]} style={styles.header}>
         <Text style={styles.headerTitle}>Profile</Text>
         <Text style={styles.headerSubtitle}>
           Manage your account settings
@@ -16,7 +16,7 @@ export default function ProfileScreen({ navigation }: any) {
 
       <View style={styles.content}>
         <View style={styles.placeholderContainer}>
-          <Icon name="person" size={64} color="#1e3c72" />
+          <Icon name="person" size={64} color={Colors.primary} />
           <Text style={styles.placeholderTitle}>Coming Soon</Text>
           <Text style={styles.placeholderDescription}>
             Profile management and settings will be available soon.
