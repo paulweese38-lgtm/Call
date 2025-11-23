@@ -536,4 +536,185 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: 20,
   },
+  // Voicemail Intelligence styles
+  content: {
+    flex: 1,
+  },
+  filtersContainer: {
+    padding: Spacing.lg,
+    paddingBottom: Spacing.md,
+  },
+  filterChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.sm,
+    backgroundColor: Colors.surface,
+    borderRadius: BorderRadius.lg,
+    marginRight: Spacing.sm,
+    borderWidth: 1,
+    borderColor: Colors.border,
+  },
+  selectedFilter: {
+    backgroundColor: Colors.accent,
+    borderColor: Colors.accent,
+  },
+  filterText: {
+    fontSize: 14,
+    color: Colors.text,
+    marginLeft: Spacing.sm,
+  },
+  selectedFilterText: {
+    color: Colors.white,
+    fontWeight: '500',
+  },
+  sortContainer: {
+    marginTop: Spacing.md,
+  },
+  sortLabel: {
+    fontSize: 14,
+    color: Colors.textSecondary,
+    marginBottom: Spacing.sm,
+  },
+  sortChip: {
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.xs,
+    backgroundColor: Colors.input,
+    borderRadius: BorderRadius.md,
+    marginRight: Spacing.sm,
+    borderWidth: 1,
+    borderColor: Colors.border,
+  },
+  selectedSort: {
+    backgroundColor: Colors.primary,
+    borderColor: Colors.primary,
+  },
+  sortText: {
+    fontSize: 14,
+    color: Colors.text,
+  },
+  selectedSortText: {
+    color: Colors.white,
+    fontWeight: '500',
+  },
+  voicemailList: {
+    padding: Spacing.lg,
+    paddingTop: 0,
+  },
+  voicemailItem: {
+    backgroundColor: Colors.surface,
+    borderRadius: BorderRadius.lg,
+    padding: Spacing.lg,
+    marginBottom: Spacing.md,
+    ...Shadows.medium,
+  },
+  voicemailHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginBottom: Spacing.sm,
+  },
+  callerInfo: {
+    flex: 1,
+  },
+  callerName: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: Colors.text,
+    marginLeft: Spacing.sm,
+    marginBottom: Spacing.xs,
+  },
+  phoneNumber: {
+    fontSize: 14,
+    color: Colors.textSecondary,
+    marginLeft: 26, // Align with caller name
+  },
+  voicemailMeta: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.sm,
+  },
+  categoryBadge: {
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: Spacing.xs,
+    borderRadius: BorderRadius.sm,
+  },
+  categoryText: {
+    fontSize: 10,
+    color: Colors.white,
+    fontWeight: 'bold',
+  },
+  urgencyBadge: {
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: Spacing.xs,
+    borderRadius: BorderRadius.sm,
+  },
+  urgencyText: {
+    fontSize: 10,
+    color: Colors.white,
+    fontWeight: 'bold',
+  },
+  voicemailDetails: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: Spacing.sm,
+  },
+  timestamp: {
+    fontSize: 12,
+    color: Colors.textSecondary,
+  },
+  duration: {
+    fontSize: 12,
+    color: Colors.textSecondary,
+  },
+  violationIndicator: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  violationCount: {
+    fontSize: 12,
+    color: Colors.error,
+    marginLeft: Spacing.xs,
+  },
+  transcriptPreview: {
+    backgroundColor: Colors.input,
+    borderRadius: BorderRadius.md,
+    padding: Spacing.sm,
+    marginBottom: Spacing.sm,
+  },
+  transcriptText: {
+    fontSize: 14,
+    color: Colors.text,
+    lineHeight: 18,
+  },
+  actionableIndicator: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: `${Colors.accent}20`,
+    borderRadius: BorderRadius.md,
+    padding: Spacing.sm,
+  },
+  actionableText: {
+    fontSize: 12,
+    color: Colors.accent,
+    marginLeft: Spacing.sm,
+  },
+  emptyState: {
+    alignItems: 'center',
+    padding: Spacing.xl,
+  },
+  emptyTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: Colors.text,
+    marginTop: Spacing.lg,
+    marginBottom: Spacing.sm,
+  },
+  emptyDescription: {
+    fontSize: 14,
+    color: Colors.textSecondary,
+    textAlign: 'center',
+    lineHeight: 20,
+  },
 });
