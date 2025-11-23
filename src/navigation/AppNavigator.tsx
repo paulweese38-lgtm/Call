@@ -15,6 +15,7 @@ import ForgotPasswordScreen from '../screens/auth/ForgotPasswordScreen';
 // Main App Screens (to be created)
 import LegalDashboardScreen from '../screens/legal/LegalDashboardScreen';
 import VoicemailListScreen from '../screens/voicemail/VoicemailListScreen';
+import CallHistoryScreen from '../screens/call/CallHistoryScreen';
 import PhoneManagementScreen from '../screens/phone/PhoneManagementScreen';
 import VoicePlaygroundScreen from '../screens/voice/VoicePlaygroundScreen';
 import ProfileScreen from '../screens/profile/ProfileScreen';
