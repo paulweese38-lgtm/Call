@@ -261,7 +261,7 @@ export default function LegalDashboardScreen({ navigation }: any) {
         recentDocuments.map((doc) => (
           <TouchableOpacity key={doc.id} style={styles.documentItem}>
             <View style={styles.documentIconContainer}>
-              <Icon name={getDocumentIcon(doc.document_type)} size={24} color="#1e3c72" />
+              <Icon name={getDocumentIcon(doc.document_type)} size={24} color={Colors.primary} />
             </View>
             <View style={styles.documentContent}>
               <Text style={styles.documentTitle}>{getDocumentTitle(doc.document_type)}</Text>
