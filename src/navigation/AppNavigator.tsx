@@ -95,6 +95,9 @@ const MainTabNavigator = () => {
       case 'LegalDashboard':
         iconName = 'gavel';
         break;
+      case 'CallHistory':
+        iconName = 'history';
+        break;
       case 'Voicemail':
         iconName = 'voicemail';
         break;
