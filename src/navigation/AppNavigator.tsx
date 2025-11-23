@@ -121,6 +121,8 @@ const MainTabNavigator = () => {
     switch (routeName) {
       case 'LegalDashboard':
         return 'Legal';
+      case 'CallHistory':
+        return 'Calls';
       case 'Voicemail':
         return 'Voicemail';
       case 'Phone':
