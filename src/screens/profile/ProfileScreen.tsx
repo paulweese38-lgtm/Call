@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { Colors, Spacing, BorderRadius } from '../../constants/theme';
 
 export default function ProfileScreen({ navigation }: any) {
   return (
