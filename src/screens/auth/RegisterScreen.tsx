@@ -598,8 +598,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   checkboxChecked: {
-    backgroundColor: '#1e3c72',
-    borderColor: '#1e3c72',
+    backgroundColor: Colors.accent,
+    borderColor: Colors.accent,
   },
   checkboxError: {
     borderColor: '#ff4444',
