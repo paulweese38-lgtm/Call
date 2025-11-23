@@ -573,7 +573,7 @@ User: ${user?.full_name || 'Your Name'}
       onRequestClose={onClose}
     >
       <View style={styles.container}>
-        <LinearGradient colors={['#1e3c72', '#2a5298']} style={styles.header}>
+        <LinearGradient colors={[Colors.primary, Colors.primaryDark]} style={styles.header}>
           <View style={styles.headerContent}>
             <TouchableOpacity onPress={onClose} style={styles.closeButton}>
               <Icon name="close" size={24} color="#fff" />
