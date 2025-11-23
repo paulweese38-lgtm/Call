@@ -118,7 +118,7 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
                 <TextInput
                   style={styles.input}
                   placeholder="Email Address"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={Colors.textMuted}
                   value={credentials.email}
                   onChangeText={(value) => updateCredentials('email', value)}
                   keyboardType="email-address"
@@ -132,7 +132,7 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
                 <TextInput
                   style={styles.input}
                   placeholder="Password"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={Colors.textMuted}
                   value={credentials.password}
                   onChangeText={(value) => updateCredentials('password', value)}
                   secureTextEntry={!showPassword}
