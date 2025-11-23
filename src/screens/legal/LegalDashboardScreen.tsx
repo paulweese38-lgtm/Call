@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useAuthStore } from '../store/authStore';
 import { supabaseClient } from '../lib/supabaseClient';
 import { Colors, Spacing, BorderRadius, Shadows } from '../../constants/theme';
+import AIDocumentGenerator from '../../components/legal/AIDocumentGenerator';
 
 interface LegalDocument {
   id: string;
