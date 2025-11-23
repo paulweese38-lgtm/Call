@@ -3,7 +3,7 @@ import { StatusBar, LogBox } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { PaperProvider } from 'react-native-paper';
-import AppNavigator from '@/navigation/AppNavigator';
+import AppNavigator from './src/navigation/AppNavigator';
 
 // Ignore specific warnings that are common in React Native development
 LogBox.ignoreLogs([
