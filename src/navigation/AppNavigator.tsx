@@ -147,8 +147,8 @@ const MainTabNavigator = () => {
             {getTabLabel(focused, route.name)}
           </Text>
         ),
-        tabBarActiveTintColor: '#1e3c72',
-        tabBarInactiveTintColor: '#888',
+        tabBarActiveTintColor: Colors.accent,
+        tabBarInactiveTintColor: Colors.textMuted,
         tabBarStyle: appStyles.tabBar,
         headerShown: false,
         tabBarBadge: isPremiumFeature(route.name) ? '🔒' : undefined,
