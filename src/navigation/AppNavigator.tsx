@@ -26,6 +26,7 @@ import DebtTrackerScreen from '../screens/debt/DebtTrackerScreen';
 import SOLTrackerScreen from '../screens/debt/SOLTrackerScreen';
 import DebtAnalysisScreen from '../screens/debt/DebtAnalysisScreen';
 import SOLDefenseScreen from '../screens/debt/SOLDefenseScreen';
+import LegalReportScreen from '../screens/debt/LegalReportScreen';
 
 // Types
 export type RootStackParamList = {
