@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StatusBar, Alert, Linking, View, Text, ActivityIndicator, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useAuthStore } from '../store/authStore';
+import { Colors } from '../constants/theme';
 
 // Auth Screens
 import LoginScreen from '../screens/auth/LoginScreen';
