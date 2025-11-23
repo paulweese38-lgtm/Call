@@ -113,7 +113,7 @@ export default function ForgotPasswordScreen({ navigation }: ForgotPasswordScree
     return (
       <SafeAreaView style={styles.container}>
         <LinearGradient
-          colors={['#1e3c72', '#2a5298']}
+          colors={[Colors.primary, Colors.primaryDark]}
           style={styles.gradient}
         >
           <KeyboardAvoidingView
