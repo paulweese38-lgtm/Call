@@ -218,6 +218,13 @@ const MainTabNavigator = () => {
         }}
       />
       <Tab.Screen
+        name="DebtTracker"
+        component={DebtTrackerScreen}
+        options={{
+          title: 'Debt Tracker',
+        }}
+      />
+      <Tab.Screen
         name="Profile"
         component={ProfileScreen}
         options={{
