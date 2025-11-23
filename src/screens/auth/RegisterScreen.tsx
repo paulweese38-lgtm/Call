@@ -623,7 +623,7 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
   },
   registerButton: {
-    backgroundColor: '#1e3c72',
+    backgroundColor: Colors.accent,
     borderRadius: 8,
     paddingVertical: 14,
     alignItems: 'center',
