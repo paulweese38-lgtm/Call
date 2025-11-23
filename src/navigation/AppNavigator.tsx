@@ -142,7 +142,7 @@ const MainTabNavigator = () => {
         tabBarLabel: ({ focused }) => (
           <Text style={[
             appStyles.tabBarLabel,
-            { color: focused ? '#1e3c72' : '#888' }
+            { color: focused ? Colors.accent : Colors.textMuted }
           ]}>
             {getTabLabel(focused, route.name)}
           </Text>
