@@ -231,14 +231,17 @@ export default function LegalDashboardScreen({ navigation }: any) {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={styles.quickActionButton}
-          onPress={() => handleFeaturePress('custom_document')}
+          style={[styles.quickActionButton, styles.aiActionButton]}
+          onPress={() => setShowAIDocumentGenerator(true)}
         >
-          <View style={styles.actionIconContainer}>
-            <Icon name="edit" size={28} color={Colors.primary} />
+          <View style={[styles.actionIconContainer, styles.aiActionIcon]}>
+            <Icon name="psychology" size={28} color={Colors.accent} />
+            <View style={styles.aiBadge}>
+              <Text style={styles.aiBadgeText}>AI</Text>
+            </View>
           </View>
-          <Text style={styles.actionTitle}>Custom Document</Text>
-          <Text style={styles.actionDescription}>Create custom legal documents</Text>
+          <Text style={styles.actionTitle}>AI Document Generator</Text>
+          <Text style={styles.actionDescription}>Smart legal documents powered by AI</Text>
         </TouchableOpacity>
       </View>
     </View>
