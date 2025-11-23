@@ -37,6 +37,7 @@ export default function LegalDashboardScreen({ navigation }: any) {
   const [recentDocuments, setRecentDocuments] = useState<LegalDocument[]>([]);
   const [threatAnalyses, setThreatAnalyses] = useState<ThreatAnalysis[]>([]);
   const [loading, setLoading] = useState(true);
+  const [showAIDocumentGenerator, setShowAIDocumentGenerator] = useState(false);
 
   const { user } = useAuthStore();
 
