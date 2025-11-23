@@ -233,7 +233,7 @@ export default function LegalDashboardScreen({ navigation }: any) {
           onPress={() => handleFeaturePress('custom_document')}
         >
           <View style={styles.actionIconContainer}>
-            <Icon name="edit" size={28} color="#1e3c72" />
+            <Icon name="edit" size={28} color={Colors.primary} />
           </View>
           <Text style={styles.actionTitle}>Custom Document</Text>
           <Text style={styles.actionDescription}>Create custom legal documents</Text>
