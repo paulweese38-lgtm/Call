@@ -271,7 +271,7 @@ export default function RegisterScreen({ navigation }: RegisterScreenProps) {
                 <TextInput
                   style={[styles.input, validationErrors.fullName && styles.inputError]}
                   placeholder="Full Name"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={Colors.textMuted}
                   value={formData.full_name}
                   onChangeText={(value) => updateFormData('full_name', value)}
                   autoCapitalize="words"
@@ -287,7 +287,7 @@ export default function RegisterScreen({ navigation }: RegisterScreenProps) {
                 <TextInput
                   style={[styles.input, validationErrors.email && styles.inputError]}
                   placeholder="Email Address"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={Colors.textMuted}
                   value={formData.email}
                   onChangeText={(value) => updateFormData('email', value)}
                   keyboardType="email-address"
@@ -304,7 +304,7 @@ export default function RegisterScreen({ navigation }: RegisterScreenProps) {
                 <TextInput
                   style={[styles.input, validationErrors.password && styles.inputError]}
                   placeholder="Password"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={Colors.textMuted}
                   value={formData.password}
                   onChangeText={(value) => updateFormData('password', value)}
                   secureTextEntry={!showPassword}
@@ -348,7 +348,7 @@ export default function RegisterScreen({ navigation }: RegisterScreenProps) {
                 <TextInput
                   style={[styles.input, validationErrors.confirmPassword && styles.inputError]}
                   placeholder="Confirm Password"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={Colors.textMuted}
                   value={formData.confirmPassword}
                   onChangeText={(value) => updateFormData('confirmPassword', value)}
                   secureTextEntry={!showConfirmPassword}
@@ -371,7 +371,7 @@ export default function RegisterScreen({ navigation }: RegisterScreenProps) {
                 <TextInput
                   style={styles.input}
                   placeholder="Phone Number (Optional)"
-                  placeholderTextColor="#888"
+                  placeholderTextColor={Colors.textMuted}
                   value={formData.phone_number}
                   onChangeText={(value) => updateFormData('phone_number', value)}
                   keyboardType="phone-pad"
