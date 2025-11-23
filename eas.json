@@ -1,0 +1,51 @@
+{
+  "cli": {
+    "version": ">= 3.0.0"
+  },
+  "build": {
+    "development": {
+      "channel": "development",
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "resourceClass": "medium"
+      }
+    },
+    "staging": {
+      "channel": "staging",
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "resourceClass": "medium"
+      }
+    },
+    "production": {
+      "channel": "production",
+      "distribution": "store",
+      "ios": {
+        "resourceClass": "m-large"
+      },
+      "android": {
+        "resourceClass": "large",
+        "releaseStatus": "draft"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": process.env.APPLE_ID || "your-apple-id",
+        "ascAppId": process.env.ASC_APP_ID || "your-app-store-app-id",
+        "appleTeamId": process.env.APPLE_TEAM_ID || "your-apple-team-id"
+      },
+      "android": {
+        "track": "production",
+        "releaseStatus": "draft"
+      }
+    }
+  }
+}
