@@ -91,12 +91,12 @@ export default function RegisterScreen({ navigation }: RegisterScreenProps) {
 
   const getPasswordStrengthColor = (strength: number): string => {
     switch (strength) {
-      case 0: return '#ff4444';
-      case 1: return '#ff8800';
-      case 2: return '#ffbb00';
-      case 3: return '#88cc00';
-      case 4: return '#00cc66';
-      default: return '#ddd';
+      case 0: return Colors.accent;
+      case 1: return Colors.accent;
+      case 2: return Colors.warning;
+      case 3: return Colors.success;
+      case 4: return Colors.success;
+      default: return Colors.textMuted;
     }
   };
 
