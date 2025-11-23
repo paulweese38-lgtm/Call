@@ -72,6 +72,7 @@ export type MainTabParamList = {
   Phone: undefined;
   Voice: undefined;
   DebtTracker: undefined;
+  CreditMonitor: undefined;
   Profile: undefined;
   Subscription: undefined;
 };
