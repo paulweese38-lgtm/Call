@@ -33,6 +33,13 @@ export type RootStackParamList = {
   MainApp: undefined;
   DocumentViewer: { id: string };
   DocumentGenerator: { type: string };
+  DebtTracker: undefined;
+  SOLTracker: undefined;
+  DebtAnalysis: { debt?: any };
+  SOLDefense: { debt?: any };
+  LegalReport: { phoneNumber?: string; debt?: any };
+  Violations: undefined;
+  ActivityDetails: { activity: any };
 };
 
 export type AuthStackParamList = {
