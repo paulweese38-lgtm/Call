@@ -1,9 +1,11 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Alert, RefreshControl } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useAuthStore } from '../store/authStore';
 import { Colors, Spacing, BorderRadius, Shadows } from '../../constants/theme';
+import VoicemailIntelligenceEngine, { VoicemailMessage } from '../../services/voicemail/VoicemailIntelligenceEngine';
+import VoicemailIntelligenceInterface from '../../components/voicemail/VoicemailIntelligenceInterface';
 
 export default function VoicemailListScreen({ navigation }: any) {
   const { user } = useAuthStore();
