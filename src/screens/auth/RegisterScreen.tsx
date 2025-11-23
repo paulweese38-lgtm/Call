@@ -701,7 +701,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   resendButtonText: {
-    color: '#1e3c72',
+    color: Colors.primary,
     fontSize: 16,
     fontWeight: '500',
     textAlign: 'center',
