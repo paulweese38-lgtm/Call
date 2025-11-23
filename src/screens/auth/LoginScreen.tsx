@@ -103,11 +103,7 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
             {/* Logo and Header */}
             <View style={styles.header}>
               <View style={styles.logoContainer}>
-                <Image
-                  source={require('@/assets/images/callwall-logo.png')}
-                  style={styles.logo}
-                  defaultSource={require('@/assets/images/placeholder-logo.png')}
-                />
+                <Text style={styles.logoText}>🛡️</Text>
               </View>
               <Text style={styles.title}>Welcome to CallWall</Text>
               <Text style={styles.subtitle}>
