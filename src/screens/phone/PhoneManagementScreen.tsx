@@ -30,16 +30,16 @@ export default function PhoneManagementScreen({ navigation }: any) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: Colors.background,
   },
   header: {
-    padding: 20,
+    padding: Spacing.lg,
     paddingTop: 40,
   },
   headerTitle: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#fff',
+    color: Colors.white,
     marginBottom: 8,
   },
   headerSubtitle: {
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 20,
+    padding: Spacing.lg,
   },
   placeholderContainer: {
     alignItems: 'center',
@@ -59,13 +59,13 @@ const styles = StyleSheet.create({
   placeholderTitle: {
     fontSize: 20,
     fontWeight: '600',
-    color: '#333',
+    color: Colors.text,
     marginTop: 16,
     marginBottom: 8,
   },
   placeholderDescription: {
     fontSize: 14,
-    color: '#666',
+    color: Colors.textSecondary,
     textAlign: 'center',
     lineHeight: 20,
   },
