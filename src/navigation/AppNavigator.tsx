@@ -304,7 +304,7 @@ const AppNavigator = () => {
     <NavigationContainer ref={navigation}>
       <StatusBar
         barStyle="light-content"
-        backgroundColor="#1e3c72"
+        backgroundColor={Colors.primary}
         translucent={false}
       />
       <Stack.Navigator
