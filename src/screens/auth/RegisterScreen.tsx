@@ -15,6 +15,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuthStore } from '../store/authStore';
 import { RegisterData } from '../types/auth';
+import { Colors, Spacing, BorderRadius, Shadows } from '../../constants/theme';
 
 interface RegisterScreenProps {
   navigation: any;
