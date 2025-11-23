@@ -142,6 +142,9 @@ const MainTabNavigator = () => {
       case 'DebtTracker':
         iconName = 'account-balance-wallet';
         break;
+      case 'CreditMonitor':
+        iconName = 'credit-score';
+        break;
       case 'Profile':
         iconName = 'person';
         break;
