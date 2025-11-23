@@ -169,6 +169,8 @@ const MainTabNavigator = () => {
         return 'Voice';
       case 'DebtTracker':
         return 'Debts';
+      case 'CreditMonitor':
+        return 'Credit';
       case 'Profile':
         return 'Profile';
       default:
