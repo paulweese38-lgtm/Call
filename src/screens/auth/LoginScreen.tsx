@@ -10,12 +10,11 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
-  Image,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useAuthStore } from '@/store/authStore';
-import { LoginCredentials } from '@/types/auth';
+import { useAuthStore } from '../store/authStore';
+import { LoginCredentials } from '../types/auth';
 
 interface LoginScreenProps {
   navigation: any;
