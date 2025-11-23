@@ -628,4 +628,28 @@ const styles = StyleSheet.create({
     flex: 1,
     lineHeight: 18,
   },
+  // AI-specific styles
+  aiActionButton: {
+    backgroundColor: `${Colors.accent}10`,
+    borderWidth: 2,
+    borderColor: Colors.accent,
+  },
+  aiActionIcon: {
+    backgroundColor: Colors.accent,
+    position: 'relative',
+  },
+  aiBadge: {
+    position: 'absolute',
+    top: -4,
+    right: -4,
+    backgroundColor: Colors.accent,
+    borderRadius: 8,
+    paddingHorizontal: 4,
+    paddingVertical: 1,
+  },
+  aiBadgeText: {
+    fontSize: 10,
+    color: Colors.white,
+    fontWeight: 'bold',
+  },
 });
