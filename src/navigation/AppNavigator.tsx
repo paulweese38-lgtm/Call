@@ -383,6 +383,62 @@ const AppNavigator = () => {
                 animation: 'slide_from_bottom',
               }}
             />
+            <Stack.Screen
+              name="DebtTracker"
+              component={DebtTrackerScreen}
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
+            <Stack.Screen
+              name="SOLTracker"
+              component={SOLTrackerScreen}
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
+            <Stack.Screen
+              name="DebtAnalysis"
+              component={DebtAnalysisScreen}
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
+            <Stack.Screen
+              name="SOLDefense"
+              component={SOLDefenseScreen}
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
+            <Stack.Screen
+              name="LegalReport"
+              component={LegalDashboardScreen} // Temporary placeholder
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_bottom',
+              }}
+            />
+            <Stack.Screen
+              name="Violations"
+              component={LegalDashboardScreen} // Temporary placeholder
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
+            <Stack.Screen
+              name="ActivityDetails"
+              component={LegalDashboardScreen} // Temporary placeholder
+              options={{
+                presentation: 'modal',
+                animation: 'slide_from_right',
+              }}
+            />
           </>
         ) : (
           // Authentication screens
