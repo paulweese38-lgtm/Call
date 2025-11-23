@@ -195,7 +195,7 @@ export default function LegalDashboardScreen({ navigation }: any) {
           onPress={() => handleFeaturePress('debt_validation')}
         >
           <View style={styles.actionIconContainer}>
-            <Icon name="description" size={28} color="#1e3c72" />
+            <Icon name="description" size={28} color={Colors.primary} />
           </View>
           <Text style={styles.actionTitle}>Debt Validation</Text>
           <Text style={styles.actionDescription}>Request debt validation from creditors</Text>
