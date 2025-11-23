@@ -21,6 +21,12 @@ import VoicePlaygroundScreen from '../screens/voice/VoicePlaygroundScreen';
 import ProfileScreen from '../screens/profile/ProfileScreen';
 import SubscriptionScreen from '../screens/subscription/SubscriptionScreen';
 
+// Debt Collection Tracker Screens
+import DebtTrackerScreen from '../screens/debt/DebtTrackerScreen';
+import SOLTrackerScreen from '../screens/debt/SOLTrackerScreen';
+import DebtAnalysisScreen from '../screens/debt/DebtAnalysisScreen';
+import SOLDefenseScreen from '../screens/debt/SOLDefenseScreen';
+
 // Types
 export type RootStackParamList = {
   AuthStack: undefined;
