@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useAuthStore } from '../store/authStore';
+import { Colors, Spacing, BorderRadius, Shadows } from '../../constants/theme';
 
 export default function VoicePlaygroundScreen({ navigation }: any) {
   const { user } = useAuthStore();
