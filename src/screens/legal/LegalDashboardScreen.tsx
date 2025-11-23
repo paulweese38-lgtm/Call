@@ -206,7 +206,7 @@ export default function LegalDashboardScreen({ navigation }: any) {
           onPress={() => handleFeaturePress('cease_desist')}
         >
           <View style={styles.actionIconContainer}>
-            <Icon name="block" size={28} color="#1e3c72" />
+            <Icon name="block" size={28} color={Colors.primary} />
           </View>
           <Text style={styles.actionTitle}>Cease & Desist</Text>
           <Text style={styles.actionDescription}>Stop unwanted communications</Text>
