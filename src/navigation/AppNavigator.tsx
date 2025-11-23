@@ -169,6 +169,13 @@ const MainTabNavigator = () => {
         }}
       />
       <Tab.Screen
+        name="CallHistory"
+        component={CallHistoryScreen}
+        options={{
+          title: 'Call History',
+        }}
+      />
+      <Tab.Screen
         name="Voicemail"
         component={VoicemailListScreen}
         options={{
