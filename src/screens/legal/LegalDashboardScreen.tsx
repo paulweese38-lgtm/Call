@@ -388,6 +388,20 @@ export default function LegalDashboardScreen({ navigation }: any) {
         {renderThreatAnalysis()}
         {renderLegalTips()}
       </ScrollView>
+
+      <AIDocumentGenerator
+        visible={showAIDocumentGenerator}
+        onClose={() => setShowAIDocumentGenerator(false)}
+        onDocumentGenerated={(document) => {
+          setShowAIDocumentGenerator(false);
+          // Refresh the documents list after generation
+          loadDashboardData();
+          Alert.alert(
+            'Document Generated!',
+            `${document.title} has been created successfully with ${document.estimatedSuccessRate}% success rate.`
+          );
+        }}
+      />
     </View>
   );
 }
