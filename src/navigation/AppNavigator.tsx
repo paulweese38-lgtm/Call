@@ -46,6 +46,17 @@ export type RootStackParamList = {
   LegalReport: { phoneNumber?: string; debt?: any };
   Violations: undefined;
   ActivityDetails: { activity: any };
+  CreditMonitor: undefined;
+  CreditAccounts: undefined;
+  CreditDisputes: undefined;
+  CreditAlerts: undefined;
+  ScoreOptimizations: undefined;
+  OptimizationDetails: { optimization: any };
+  AccountOptimization: { account: any };
+  UtilizationOptimization: undefined;
+  PaymentOptimization: undefined;
+  LimitIncrease: undefined;
+  CreditReport: undefined;
 };
 
 export type AuthStackParamList = {
