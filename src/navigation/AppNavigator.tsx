@@ -248,6 +248,13 @@ const MainTabNavigator = () => {
         }}
       />
       <Tab.Screen
+        name="CreditMonitor"
+        component={CreditMonitorScreen}
+        options={{
+          title: 'Credit Monitor',
+        }}
+      />
+      <Tab.Screen
         name="Profile"
         component={ProfileScreen}
         options={{
