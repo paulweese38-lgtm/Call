@@ -128,13 +128,13 @@ export default function LegalDashboardScreen({ navigation }: any) {
   const getThreatLevelColor = (level: string): string => {
     switch (level) {
       case 'high':
-        return '#ff4444';
+        return Colors.accent;
       case 'medium':
-        return '#ff8800';
+        return Colors.warning;
       case 'low':
-        return '#00cc66';
+        return Colors.success;
       default:
-        return '#888';
+        return Colors.textMuted;
     }
   };
 
