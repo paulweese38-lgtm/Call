@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CallWall Mobile App
 
-## Getting Started
+A comprehensive communication management and protection platform for iOS and Android, built with React Native and Expo.
 
-First, run the development server:
+## Features
+
+- 📄 **Legal Protection Tools** - Generate FDCPA-compliant debt validation and cease & desist letters
+- 🎙️ **Voicemail Intelligence** - AI-powered transcription and threat analysis
+- 📞 **Phone Management** - Track, block, and analyze phone numbers
+- 🎤 **Voice Playground** - AI text-to-speech with 6 unique personalities
+- 💳 **Freemium Subscriptions** - Free, Premium ($9.99/mo), and Business ($29.99/mo) tiers
+- 🔒 **Secure & Private** - End-to-end encryption and secure data storage
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js 16+ and npm
+- Expo CLI (`npm install -g expo-cli`)
+- iOS Simulator (Mac) or Android Emulator
+- Supabase account and project
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your Supabase credentials
+
+# Set up database
+# Run SQL from DATABASE_SCHEMA.md in your Supabase SQL Editor
+
+# Start development server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the App
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# iOS
+npm run ios
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Android
+npm run android
+```
 
-## Learn More
+## Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: React Native + Expo SDK 50+
+- **UI Library**: NativeBase
+- **State Management**: Zustand
+- **Backend**: Supabase (PostgreSQL, Auth, Storage)
+- **AI Services**: OpenAI (Whisper, TTS), Anthropic (Claude)
+- **Payments**: Stripe
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Implementation Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ✅ Completed
+- Core infrastructure and configuration
+- Supabase backend integration
+- Complete database schema
+- Authentication system with biometric support
+- All business logic services
+- Navigation structure
 
-## Deploy on Vercel
+### 🔄 Remaining
+- UI screens for main features (architecture in place)
+- AI API integrations via Edge Functions
+- Stripe payment integration
+- Production assets
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+See `IMPLEMENTATION_NOTES.md` for detailed status and `DATABASE_SCHEMA.md` for database setup.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with React Native + Expo | Powered by Supabase

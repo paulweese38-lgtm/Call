@@ -1,0 +1,113 @@
+{
+  "expo": {
+    "name": "CallWall",
+    "slug": "callwall",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "description": "CallWall protects you from harassment, debt collection calls, and unwanted communication. Generate legal documents, transcribe voicemails with AI, and manage phone numbers with advanced threat detection.",
+    "primaryColor": "#3B82F6",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/TO_BE_CONFIGURED"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.callwall.mobile",
+      "buildNumber": "1",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "CallWall needs microphone access to record voicemails for transcription and threat analysis",
+        "NSPhotoLibraryUsageDescription": "CallWall needs photo access to attach supporting documents to legal filings",
+        "NSCameraUsageDescription": "CallWall needs camera access to scan and attach documents",
+        "NSFaceIDUsageDescription": "CallWall uses Face ID to securely access your legal documents and voicemail records",
+        "UIBackgroundModes": [
+          "audio",
+          "fetch",
+          "remote-notification"
+        ]
+      },
+      "usesAppleSignIn": false,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.callwall.mobile",
+      "versionCode": 1,
+      "permissions": [
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_PHONE_STATE",
+        "READ_CALL_LOG",
+        "USE_BIOMETRIC",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "VIBRATE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3B82F6"
+      },
+      "blockedPermissions": [
+        "android.permission.READ_SMS",
+        "android.permission.SEND_SMS"
+      ]
+    },
+    "notification": {
+      "icon": "./assets/notification-icon.png",
+      "color": "#3B82F6",
+      "androidMode": "default",
+      "androidCollapsedTitle": "#{unread_notifications} new notifications"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-local-authentication",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#3B82F6",
+          "sounds": [
+            "./assets/notification-sound.wav"
+          ]
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "CallWall needs microphone access to record voicemails for transcription and threat analysis"
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ]
+    ],
+    "scheme": "callwall",
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "TO_BE_CREATED_ON_EAS"
+      }
+    },
+    "privacy": "public",
+    "hooks": {
+      "postPublish": []
+    }
+  }
+}
