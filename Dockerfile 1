@@ -1,0 +1,33 @@
+# Multi-stage Dockerfile for a Next.js app (Node 18)
+# Builds the Next app and runs it with `next start`.
+
+FROM node:18-alpine AS builder
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm ci --silent
+
+# Copy source and build Next app
+COPY . .
+RUN npm run build
+
+# Runtime image
+FROM node:18-alpine AS runtime
+WORKDIR /app
+
+ENV NODE_ENV=production
+ENV PORT=3000
+
+# Copy package.json and built output from builder
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/next.config.js ./next.config.js  # if you have it; harmless if not present
+
+# Install only production deps in runtime
+RUN npm ci --only=production --silent
+
+EXPOSE ${PORT}
+# Use the start script from package.json (next start)
+CMD ["npm", "start"]
