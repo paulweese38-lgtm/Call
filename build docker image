@@ -1,0 +1,49 @@
+name: Build Docker image to ACR and deploy to Azure Web App (Containers)
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Build & push image using ACR Tasks
+        env:
+          ACR_NAME: ${{ secrets.ACR_NAME }}
+          ACR_REPOSITORY: ${{ secrets.ACR_REPOSITORY }}
+        run: |
+          IMAGE_TAG=${GITHUB_SHA::8}
+          az acr build --registry $ACR_NAME --image $ACR_REPOSITORY:$IMAGE_TAG .
+
+      - name: Update Web App to use new image and restart
+        env:
+          ACR_NAME: ${{ secrets.ACR_NAME }}
+          ACR_REPOSITORY: ${{ secrets.ACR_REPOSITORY }}
+          AZURE_WEBAPP_NAME: ${{ secrets.AZURE_WEBAPP_NAME }}
+          AZURE_RESOURCE_GROUP: ${{ secrets.AZURE_RESOURCE_GROUP }}
+        run: |
+          IMAGE_TAG=${GITHUB_SHA::8}
+          FULL_IMAGE="$ACR_NAME.azurecr.io/$ACR_REPOSITORY:$IMAGE_TAG"
+          echo "Setting container image for webapp: $FULL_IMAGE"
+          az webapp config container set \
+            --name "$AZURE_WEBAPP_NAME" \
+            --resource-group "$AZURE_RESOURCE_GROUP" \
+            --docker-custom-image-name "$FULL_IMAGE"
+          az webapp restart --name "$AZURE_WEBAPP_NAME" --resource-group "$AZURE_RESOURCE_GROUP"
+
+      - name: Output deployed URL
+        run: echo "Deployed to https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net"
